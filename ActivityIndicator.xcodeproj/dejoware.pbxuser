@@ -1,0 +1,183 @@
+// !$*UTF8*$!
+{
+	1D6058900D05DD3D006BFB54 /* ActivityIndicator */ = {
+		activeExec = 0;
+		executables = (
+			A584A71C1124D99800CFCB2C /* ActivityIndicator */,
+		);
+	};
+	28D7ACF60DDB3853001CB0EB /* ActivityIndicatorViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {859, 551}}";
+			sepNavSelRange = "{219, 0}";
+			sepNavVisRange = "{0, 441}";
+		};
+	};
+	28D7ACF70DDB3853001CB0EB /* ActivityIndicatorViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {859, 1157}}";
+			sepNavSelRange = "{2097, 0}";
+			sepNavVisRange = "{1235, 1151}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = A584A71C1124D99800CFCB2C /* ActivityIndicator */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* ActivityIndicator */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* ActivityIndicator */,
+		);
+		breakpoints = (
+		);
+		codeSenseManager = A584A7351124D9A200CFCB2C /* Code sense */;
+		executables = (
+			A584A71C1124D99800CFCB2C /* ActivityIndicator */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					681,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 301948934;
+			PBXWorkspaceStateSaveDate = 301948934;
+		};
+		perUserProjectItems = {
+			A527D2EA1126270100341BE1 = A527D2EA1126270100341BE1 /* PBXTextBookmark */;
+			A527D2ED11262F3E00341BE1 = A527D2ED11262F3E00341BE1 /* PBXTextBookmark */;
+			A527D2EE11262F3E00341BE1 = A527D2EE11262F3E00341BE1 /* PBXTextBookmark */;
+			A527D2EF11262F3E00341BE1 = A527D2EF11262F3E00341BE1 /* PBXTextBookmark */;
+			A584AA8A1126183100CFCB2C = A584AA8A1126183100CFCB2C /* PBXTextBookmark */;
+		};
+		sourceControlManager = A584A7341124D9A200CFCB2C /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	A527D2EA1126270100341BE1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* ActivityIndicatorViewController.m */;
+		name = "ActivityIndicatorViewController.m: 79";
+		rLen = 0;
+		rLoc = 2097;
+		rType = 0;
+		vrLen = 1151;
+		vrLoc = 1235;
+	};
+	A527D2ED11262F3E00341BE1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A584A7451124DCC400CFCB2C /* UICustomActivityIndicatorView.m */;
+		name = "UICustomActivityIndicatorView.m: 8";
+		rLen = 83;
+		rLoc = 153;
+		rType = 0;
+		vrLen = 1080;
+		vrLoc = 0;
+	};
+	A527D2EE11262F3E00341BE1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A584A7441124DCC400CFCB2C /* UICustomActivityIndicatorView.h */;
+		name = "UICustomActivityIndicatorView.h: 12";
+		rLen = 161;
+		rLoc = 264;
+		rType = 0;
+		vrLen = 1685;
+		vrLoc = 0;
+	};
+	A527D2EF11262F3E00341BE1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A584A7441124DCC400CFCB2C /* UICustomActivityIndicatorView.h */;
+		name = "UICustomActivityIndicatorView.h: 12";
+		rLen = 366;
+		rLoc = 264;
+		rType = 0;
+		vrLen = 1685;
+		vrLoc = 0;
+	};
+	A584A71C1124D99800CFCB2C /* ActivityIndicator */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = ActivityIndicator;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	A584A7341124D9A200CFCB2C /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	A584A7351124D9A200CFCB2C /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	A584A7441124DCC400CFCB2C /* UICustomActivityIndicatorView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {859, 780}}";
+			sepNavSelRange = "{264, 366}";
+			sepNavVisRange = "{0, 1685}";
+		};
+	};
+	A584A7451124DCC400CFCB2C /* UICustomActivityIndicatorView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1601, 2795}}";
+			sepNavSelRange = "{153, 83}";
+			sepNavVisRange = "{0, 1080}";
+		};
+	};
+	A584AA8A1126183100CFCB2C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* ActivityIndicatorViewController.h */;
+		name = "ActivityIndicatorViewController.h: 12";
+		rLen = 0;
+		rLoc = 219;
+		rType = 0;
+		vrLen = 441;
+		vrLoc = 0;
+	};
+}
