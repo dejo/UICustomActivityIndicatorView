@@ -2,7 +2,7 @@
 //  ActivityIndicatorAppDelegate.h
 //  ActivityIndicator
 //
-//  Created by DEJOware on 2/11/10.
+//  Created by DEJOware on 7/27/10.
 //  Copyright DEJOware 2010. All rights reserved.
 //
 

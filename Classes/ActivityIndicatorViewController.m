@@ -2,7 +2,7 @@
 //  ActivityIndicatorViewController.m
 //  ActivityIndicator
 //
-//  Created by DEJOware on 2/11/10.
+//  Created by DEJOware on 7/27/10.
 //  Copyright DEJOware 2010. All rights reserved.
 //
 
@@ -16,7 +16,7 @@
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+    if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
         // Custom initialization
     }
     return self;
@@ -38,9 +38,6 @@
 								   initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray
 								   text:NSLocalizedString(@"Searching",@"Searching")
 								   superview:self.view];
-	
-	//customActivityIndicatorView.hidesWhenStopped = NO;
-	//self.view.backgroundColor = [UIColor blackColor];
 }
 
 
@@ -62,7 +59,6 @@
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
-	customActivityIndicatorView = nil;
 }
 
 
@@ -70,9 +66,6 @@
 	[customActivityIndicatorView release];
     [super dealloc];
 }
-
-#pragma mark -
-#pragma mark Action Methods
 
 - (IBAction)startAnimating:(id)sender {
 	//customActivityIndicatorView.text = @"Searching craigslist";

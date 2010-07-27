@@ -15,7 +15,7 @@
 		2899E5220DE3E06400AC0155 /* ActivityIndicatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* ActivityIndicatorViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* ActivityIndicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* ActivityIndicatorViewController.m */; };
-		A584A7461124DCC400CFCB2C /* UICustomActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = A584A7451124DCC400CFCB2C /* UICustomActivityIndicatorView.m */; };
+		A5AD925511FF863400408429 /* UICustomActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AD925411FF863400408429 /* UICustomActivityIndicatorView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +32,8 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* ActivityIndicator_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityIndicator_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* ActivityIndicator-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ActivityIndicator-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		A584A7441124DCC400CFCB2C /* UICustomActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICustomActivityIndicatorView.h; sourceTree = "<group>"; };
-		A584A7451124DCC400CFCB2C /* UICustomActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICustomActivityIndicatorView.m; sourceTree = "<group>"; };
+		A5AD925311FF863400408429 /* UICustomActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICustomActivityIndicatorView.h; sourceTree = "<group>"; };
+		A5AD925411FF863400408429 /* UICustomActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICustomActivityIndicatorView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +57,8 @@
 				1D3623250D0F684500981E51 /* ActivityIndicatorAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* ActivityIndicatorViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* ActivityIndicatorViewController.m */,
-				A584A7441124DCC400CFCB2C /* UICustomActivityIndicatorView.h */,
-				A584A7451124DCC400CFCB2C /* UICustomActivityIndicatorView.m */,
+				A5AD925311FF863400408429 /* UICustomActivityIndicatorView.h */,
+				A5AD925411FF863400408429 /* UICustomActivityIndicatorView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -169,7 +169,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* ActivityIndicatorAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* ActivityIndicatorViewController.m in Sources */,
-				A584A7461124DCC400CFCB2C /* UICustomActivityIndicatorView.m in Sources */,
+				A5AD925511FF863400408429 /* UICustomActivityIndicatorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +199,7 @@
 				GCC_PREFIX_HEADER = ActivityIndicator_Prefix.pch;
 				INFOPLIST_FILE = "ActivityIndicator-Info.plist";
 				PRODUCT_NAME = ActivityIndicator;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -211,7 +212,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.1.3;
+				SDKROOT = iphoneos4.0;
 			};
 			name = Debug;
 		};
@@ -223,8 +224,9 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.1.3;
+				SDKROOT = iphoneos4.0;
 			};
 			name = Release;
 		};
