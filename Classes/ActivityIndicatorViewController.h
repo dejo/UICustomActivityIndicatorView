@@ -2,17 +2,17 @@
 //  ActivityIndicatorViewController.h
 //  ActivityIndicator
 //
-//  Created by DEJOware on 7/27/10.
+//  Created by DEJOware on 2/11/10.
 //  Copyright DEJOware 2010. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@class UICustomActivityIndicatorView;
+@class DEJOwareActivityIndicatorView;
 
 @interface ActivityIndicatorViewController : UIViewController {
 @private
-	UICustomActivityIndicatorView *customActivityIndicatorView;
+	DEJOwareActivityIndicatorView *activityIndicatorView;
 }
 
 - (IBAction)startAnimating:(id)sender;

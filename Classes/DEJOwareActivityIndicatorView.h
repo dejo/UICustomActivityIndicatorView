@@ -1,9 +1,9 @@
 //
-//  UICustomActivityIndicatorView.h
+//  DEJOwareActivityIndicatorView.h
 //  ActivityIndicator
 //
-//  Created by dejo on 2/11/10.
-//  Copyright 2010 DEJOware. All rights reserved.
+//  Created by DEJOware on 3/10/11.
+//  Copyright 2011 DEJOware. All rights reserved.
 //
 //  Code can be freely redistruted and modified as long as the above copyright remains.
 //
@@ -16,7 +16,7 @@
 //
 //  SUPERCLASS:
 //  
-//  This class is subclassed from UIActivityIndicatorView
+//  This class is subclassed from UIView
 //
 //  PROPERTIES:
 //
@@ -31,36 +31,44 @@
 //
 //  KNOWN LIMITATIONS:
 //
-//  - If the text string you set is too long, there will be display issues. Try to keep it short:
-//    as in, one or two words, especially when using the WhiteLarge style
+//  - If the text string you set is too long (> 20 chars), it will be truncated. Try to keep it short:
+//    as in, one or two words, especially when using the WhiteLarge style, in order to avoid truncation
 //  - The styling of the text is not currently customizable but based on the indicator style
 //
 //  SAMPLE USAGE:
 //
 //  Add the following code to a viewDidLoad:
-//  	UICustomActivityIndicatorView *customActivityIndicatorView = [[UICustomActivityIndicatorView alloc]
+//  	DEJOwareActivityIndicatorView *activityIndicatorView = [[DEJOwareActivityIndicatorView alloc]
 //			initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray
 //			text:NSLocalizedString(@"Searching",@"Searching")
 //			superview:self.view];
 //  Trigger the animation:
-//		[customActivityIndicatorView startAnimating];
+//		[activityIndicatorView startAnimating];
 //
 //  VERSION: 1.0
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 
-@interface UICustomActivityIndicatorView : UIActivityIndicatorView {
-	NSString *text;
+@interface DEJOwareActivityIndicatorView : UIView {
+	NSString *_text;
 @private
-	UILabel *textLabel;
-	UIView *superview;
+	UIActivityIndicatorView *_activityIndicatorView;
+	UILabel *_label;
+	UIView *_superview;
 }
 @property (nonatomic, retain) NSString *text;
 
 - (id)initWithActivityIndicatorStyle:(UIActivityIndicatorViewStyle)style
-								text:(NSString *)someText
-						   superview:(UIView *)aSuperview;
+								text:(NSString *)theText
+						   superview:(UIView *)theSuperview;
+
+@property(nonatomic) UIActivityIndicatorViewStyle activityIndicatorViewStyle; // default is UIActivityIndicatorViewStyleWhite
+@property(nonatomic) BOOL hidesWhenStopped; // default is YES. calls -setHidden when animating gets set to NO
+
+- (void)startAnimating;
+- (void)stopAnimating;
+- (BOOL)isAnimating;
 
 @end

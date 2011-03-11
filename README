@@ -1,4 +1,4 @@
-UICustomActivityIndicatorView
+DEJOwareActivityIndicatorView
 
 ===========================================================================
 COPYRIGHT:
@@ -19,17 +19,17 @@ spinning gear) with a label reading "Loading..." next to it.
 ===========================================================================
 BUILD REQUIREMENTS
 
-iPhone SDK 3.0
+Xcode 3.2.6
 
 ===========================================================================
 RUNTIME REQUIREMENTS
 
-iPhone SDK 3.0
+iOS 3.0+
 
 ===========================================================================
 SUPERCLASS:
 
-This class is subclassed from UIActivityIndicatorView
+This class is subclassed from UIView (but based on UIActivityIndicatorView)
 
 ===========================================================================
 PROPERTIES:
@@ -48,9 +48,9 @@ METHODS:
 ===========================================================================
 KNOWN LIMITATIONS:
 
-- If the text string you set is too long, there will be display issues. Try
-  to keep it short: as in, one or two words, especially when using the
-  WhiteLarge style
+- If the text string you set is too long (> 20 chars), it will be truncated.
+  Try to keep it short: as in, one or two words, especially when using the
+  WhiteLarge style, in order to avoid truncation
 - The styling of the text is not currently customizable but based on the
   indicator style
 
@@ -58,18 +58,18 @@ KNOWN LIMITATIONS:
 SAMPLE USAGE:
 
 Add the following code to a viewDidLoad:
-	UICustomActivityIndicatorView *customActivityIndicatorView = [[UICustomActivityIndicatorView alloc]
+	DEJOwareActivityIndicatorView *activityIndicatorView = [[DEJOwareActivityIndicatorView alloc]
 		initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray
 		text:NSLocalizedString(@"Searching",@"Searching")
 		superview:self.view];
 Trigger the animation:
-	[customActivityIndicatorView startAnimating];
+	[activityIndicatorView startAnimating];
 
 ===========================================================================
 PACKAGING LIST
 
-UICustomActivityIndicatorView
-The custom class that extends the UIActivityIndicatorView class.
+DEJOwareActivityIndicatorView
+The custom class that emulates/enhances the UIActivityIndicatorView class.
 
 ActivityIndicatorAppDelegate
 Delegate for a sample application, presents the main view at launch time.
@@ -78,4 +78,4 @@ ActivityIndicatorViewController
 A UIViewController subclass that manages the main/super view.
 
 ===========================================================================
-VERSION: 1.0
+VERSION: 2.0
